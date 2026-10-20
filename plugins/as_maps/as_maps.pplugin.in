@@ -1,0 +1,28 @@
+{
+	"$schema": "https://raw.githubusercontent.com/untrustedmodders/plugify/refs/heads/main/schemas/plugin.schema.json",
+	"version": "${AS_MAPS_VERSION}",
+	"name": "as_maps",
+	"description": "Maps module of the Pisex admin_system (Metamod plugin as_maps), ported to Plugify. Adds the 'mm_map <map>' console command (@admin/maps) and the 'maps' item of the admin menu's 'server' category: the maps of maps.ini, a five second delayed level change (changelevel / ds_workshop_changelevel, depending on the map's validity), the Changing_Map / Changing_Map_Admin chat announcement and an OnAction('map') notification.",
+	"author": "Pisex, ported to Plugify",
+	"website": "https://github.com/untrustedmodders/plugify",
+	"license": "GPL-3.0",
+	"entry": "bin/as_maps",
+	"platforms": [],
+	"language": "cpp",
+	"dependencies": [
+		{
+			"name": "s2sdk",
+			"constraints": ">=2.18.2"
+		},
+		{
+			"name": "admin_system",
+			"constraints": ">=1.0.0"
+		},
+		{
+			"name": "hudmenu",
+			"constraints": ">=1.0.0",
+			"optional": true
+		}
+	],
+	"methods": []
+}
