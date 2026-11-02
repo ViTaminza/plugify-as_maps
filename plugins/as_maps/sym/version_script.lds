@@ -10,7 +10,8 @@
         __admin_system_*;
 
         /* hudmenu binding slots (defined by hudmenu_bindings, filled by the plugify module from
-           the hudmenu plugin's exported GetClientMenuType/SetClientMenuType) */
+           the optional hudmenu plugin's exported GetClientMenuType/SetClientMenuType). Used only
+           for the player's own "!menu" choice; the map menu works without hudmenu. */
         __hudmenu_*;
 
         /* No exported methods: as_maps exposes nothing to other plugins. */
